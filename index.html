@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<title>Websiten-Creator</title>
+	</head>
+	<body>
+		<ul id="navbar">
+			<img src="logo.png" alt="Logo" width="32px" height="32px">
+			<li><a href="Updates">Updates</a></li>
+		</ul>
+		<h1 id="headline">Websiten-Creator:</h1>
+		<main id="main">
+			<form name="Formular" action="">
+				<div id="element" class="place">Element:
+					<select name="Elementtyp" size="1" id="select">
+						<option value="h1">Überschrift 1</option>
+						<option value="h2">Überschrift 2</option>
+						<option value="h3">Überschrift 3</option>
+						<option value="h4">Überschrift 4</option>
+						<option value="h5">Überschrift 5</option>
+						<option value="h6">Überschrift 6</option>
+						<option value="div">Textabsatz</option>
+						<option value="hr">Trennlinie</option>
+						<option value="span">Wort/Wörter</option>
+					</select>
+				</div>
+				<div id="Farbe" class="place">
+				Schriftfarbe:
+				<select name="Farbe" size="1" id="Color">
+					<option value="black">Schwarz</option>
+					<option value="white">Weiß</option>
+					<option value="blue">Blau</option>
+					<option value="green">Grün</option>
+					<option value="yellow">Gelb</option>
+					<option value="red">Rot</option>
+				</select>
+				</div>
+				<div id="Hintergrund" class="place">
+				Hintergrundfarbe:
+				<select name="Farbe" size="1" id="b_color">
+					<option value="white">Weiß</option>
+					<option value="black">Schwarz</option>
+					<option value="blue">Blau</option>
+					<option value="green">Grün</option>
+					<option value="yellow">Gelb</option>
+					<option value="red">Rot</option>
+				</select>
+				</div>
+
+				<div id="Text" class="place">
+				<!--Text:-->
+				<input type="text" id="input" size="50" placeholder="Text">
+				<button type="button" id="button" onclick="add()">Hinzufügen</button>
+				</div>
+
+				<button type="button" onclick="OnDownloadFile()" id="download">Download starten</button>
+				<button type="button" onclick="Reset()" id="reset">Seite reseten</button>
+			</form>
+			<fieldset>
+				<legend>Vorschau</legend>
+				<div id="Vorschau"></div>
+			</fieldset>
+		</main>
+		<a id="downloadLink" href="" download="Index.html" style="display: none;"></a>
+		<div id="Code" style="display: none;"></div>
+	</body>
+</html>
